@@ -1,1 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    font-family: 'Open Sans', sans-serif;
+
+    --button-hover-bg-color: #3b4045;
+    --button-hover-color: #fff;
+
+    --box-bg-color: #3b4045;
+}
+
+h1,h2,h3 {
+    font-family: "Oswald", sans-serif;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+.centered-content {
+    text-align:center;
+}
+
+ul:before{
+    content:attr(aria-label);
+    font-size:120%;
+    font-weight:bold;
+    margin-left:-15px;
+    
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    li {
+        display: block;
+        padding: 5px;
+        margin: 5px;
+        border: 1px solid silver;
+        max-width: 250px;
+        margin: 10px auto;
+    }
+    li:hover {
+        cursor: pointer;
+        background-color: var(--button-hover-bg-color);
+        color: var(--button-hover-color);
+    }
+}
+
